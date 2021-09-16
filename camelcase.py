@@ -42,8 +42,28 @@ def camel_case(sentence):
     words = "".join(no_line)
    # https://www.geeksforgeeks.org/filter-in-python/
     
-    print(words)
-    return words    
+   
+    return words  
+
+def main():
+    to_check = True
+    while  to_check:
+        sentence = str(input("Enter a sentence use only letters "))
+
+        # from automate the boring stuff book
+        # and from # from https://www.guru99.com/python-regular-expressions-complete-tutorial.html
+        check = re.match(r'[\d\W]', sentence)
     
-sentence = main()
-camel_case(sentence)
+        if not check: 
+            
+            to_check = False
+            
+       # return sentence 
+        end_sentence = camel_case(sentence)
+        print(end_sentence) 
+
+if __name__ == '__main__':
+    main()
+        
+
+
