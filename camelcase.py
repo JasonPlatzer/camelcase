@@ -58,9 +58,9 @@ def main():
             
             to_check = False
             
-       # return sentence 
-        end_sentence = camel_case(sentence)
-        print(end_sentence) 
+    
+            end_sentence = camel_case(sentence)
+            print(end_sentence) 
 
 if __name__ == '__main__':
     main()
